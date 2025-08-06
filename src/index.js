@@ -52,6 +52,7 @@ fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pat
         })
         const chart = lc
             .ChartXY({
+                legend: { visible: false },
                 theme: Themes[new URLSearchParams(window.location.search).get('theme') || 'darkGold'] || undefined,
             })
             .setTitle('Medical Dashboard')
@@ -72,17 +73,19 @@ fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pat
                 start: (state.dataMax ?? 0) - TIME_DOMAIN,
                 stopAxisAfter: false,
             }))
-            .setScrollStrategy(AxisScrollStrategies.progressive)
+            .setScrollStrategy(AxisScrollStrategies.scrolling)
 
         const channelsComponents = channels.map((channel, i) => {
             const axisY = yAxisList[i].setTickStrategy(AxisTickStrategies.Empty).setStrokeStyle(emptyLine).setAnimationScroll(false)
             const series = chart
-                .addPointLineAreaSeries({
-                    dataPattern: 'ProgressiveX',
+                .addLineSeries({
                     automaticColorIndex: Math.max(i - 1, 0),
                     yAxis: axisY,
+                    schema: {
+                        x: { pattern: 'progressive' },
+                        y: { pattern: null },
+                    },
                 })
-                .setAreaFillStyle(emptyFill)
                 .setName(channel.name)
                 .setMaxSampleCount(50_000)
             if (channel.name === 'Electrocardiogram') {
@@ -154,7 +157,7 @@ fetch(new URL(document.head.baseURI).origin + new URL(document.head.baseURI).pat
                 tSamplePos += 1000 / SAMPLE_RATE
                 iSampleX += 1
             }
-            channelsComponents.forEach((comp, i) => comp.series.add(seriesNewPoints[i]))
+            channelsComponents.forEach((comp, i) => comp.series.appendJSON(seriesNewPoints[i]))
             channelIncomingDataPointsCount += seriesNewPoints[0].length
             requestAnimationFrame(addData)
         }
