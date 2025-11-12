@@ -37,7 +37,7 @@ The results were shocking, with LightningChart being over 700 times faster than 
 
 In the context of Medical Dashboards, this would mean that you could even monitor up to 10 000 data sources simultaneously, and/or greatly increase the data precision!
 
-**(!) Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/basic-topics/grouping-charts/**
+**(!) Using `Dashboard` is no longer recommended for new applications. Find latest recommendations here: https://lightningchart.com/js-charts/docs/more-guides/grouping-charts/**
 
 
 ## API Links
@@ -78,17 +78,17 @@ Direct developer email support can be purchased through a [Support Plan][4] or b
 © LightningChart Ltd 2009-2025. All rights reserved.
 
 
-[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/Dashboard.html
-[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/ChartXY.html
-[Line series]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/LineSeries.html
-[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/Axis.html
-[Axis tick strategies]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/AxisTickStrategies.html
-[Axis scroll strategies]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/AxisScrollStrategies.html
-[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UIOrigins.html
-[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UILayoutBuilders.html
-[UI element builders]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/variables/UIElementBuilders.html
-[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SolidFill.html
-[HEX color factory]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/functions/ColorHEX.html
-[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/classes/SolidLine.html
-[Synchronize axis intervals]: https://lightningchart.com/js-charts/api-documentation/v8.0.1/functions/synchronizeAxisIntervals.html
+[Dashboard]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/Dashboard.html
+[XY cartesian chart]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/ChartXY.html
+[Line series]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/PointLineAreaSeries.html
+[Axis]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/Axis.html
+[Axis tick strategies]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/variables/AxisTickStrategies.html
+[Axis scroll strategies]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/variables/AxisScrollStrategies.html
+[UI position origins]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/variables/UIOrigins.html
+[UI layout builders]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/variables/UILayoutBuilders.html
+[UI element builders]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/variables/UIElementBuilders.html
+[Solid FillStyle]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SolidFill.html
+[HEX color factory]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/functions/ColorHEX.html
+[Solid LineStyle]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/classes/SolidLine.html
+[Synchronize axis intervals]: https://lightningchart.com/js-charts/api-documentation/v8.1.0/functions/synchronizeAxisIntervals.html
 
